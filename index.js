@@ -16,7 +16,9 @@ mongoose
     .connect(
         "mongodb+srv://robertas1:robertas1@cluster0.y8jgwtj.mongodb.net/test"
     )
-    .then(console.log("CONNECTED"))
+    .then(() => {
+        console.log("CONNECTED");
+    })
     .catch((err) => {
         console.log("err", err);
     });
